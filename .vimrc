@@ -7,3 +7,4 @@ set ruler " (line #, column #) in lower right
 set foldmethod=indent
 set foldlevel=99
 colorscheme zenburn
+set t_Co=256
