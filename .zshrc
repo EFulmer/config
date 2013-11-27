@@ -5,4 +5,17 @@
 
 t_Co=256
 
-alias ll=ls\ -Galt
+alias ll=ls\ -Gal
+
+# original $PS1=%m%#
+
+PS1='%m%# '
+
+# old path: erics-mbp% echo $PATH
+# /Users/eric/.opam/4.01.0/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/Users/eric/.opam/4.01.0/bin
+
+# /usr/local/bin added to the front so homebrew-installed pkgs are 
+# favored over system-installed ones:
+PATH=/usr/local/bin:$PATH
+
+alias ipython3=/usr/local/bin/ipython3
