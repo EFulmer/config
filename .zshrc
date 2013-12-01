@@ -22,3 +22,4 @@ alias ipython3=/usr/local/bin/ipython3
 
 # automatically run tmux when shell runs
 [[ -z "$TMUX" ]] && exec tmux
+doge
