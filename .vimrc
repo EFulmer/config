@@ -31,5 +31,3 @@ set foldlevel=99
 set modeline
 set number " line numbering
 set ruler " (line #, column #) in lower right
-
-set expandtab
