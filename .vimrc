@@ -20,7 +20,8 @@ Bundle 'vim-ruby/vim-ruby'
 " End Vundle stuff.
 
 " Color stuff:
-colorscheme desert " zenburn is nice too
+set background=dark
+colorscheme solarized " zenburn is nice too
 set t_Co=256
 
 " Code folding (use :za):
