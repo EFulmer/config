@@ -16,6 +16,7 @@ filetype indent plugin on " req'd for vundle; also A Good Idea
 Bundle 'nathanaelkane/vim-indent-guides'
 Bundle 'scrooloose/nerdtree'
 Bundle 'vim-ruby/vim-ruby'
+Bundle 'tpope/vim-fugitive'
 
 " End Vundle stuff.
 
@@ -32,3 +33,6 @@ set foldlevel=99
 set modeline
 set number " line numbering
 set ruler " (line #, column #) in lower right
+
+" req'd for pythoncomplete?
+filetype plugin on
