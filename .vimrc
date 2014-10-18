@@ -2,24 +2,31 @@
 set nocompatible 		" req'd for vundle?
 filetype off			" vundle
 
-set rtp+=~/.vim/bundle/vundle/
-call vundle#rc()
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
 
 " req'd for vundle; vundle updates itself
-" i.e. Bundle 'efulmer/something' for my own github plugin
-Bundle 'gmarik/vundle' 
+" i.e. Plugin 'efulmer/something' for my own github plugin
+Plugin 'gmarik/vundle' 
 
 " Plugins for Vundle to manage:
-Bundle 'nathanaelkane/vim-indent-guides'
-Bundle 'scrooloose/nerdtree'
-Bundle 'vim-ruby/vim-ruby'
-Bundle 'tpope/vim-fugitive'
-Bundle 'vim-scripts/VimClojure'
+Plugin 'nathanaelkane/vim-indent-guides'
+Plugin 'scrooloose/nerdtree'
+Plugin 'vim-ruby/vim-ruby'
+Plugin 'tpope/vim-fugitive'
+Plugin 'vim-scripts/VimClojure'
+Plugin 'fatih/vim-go'
+Plugin 'wting/rust.vim'
+Plugin 'davidhalter/jedi-vim' " Python autocompletion
+Plugin 'ervandew/supertab'
+Bundle 'derekwyatt/vim-scala'
+
+call vundle#end()
+filetype indent plugin on " req'd for vundle; also A Good Idea
 
 " End Vundle stuff.
 
 syntax on
-filetype indent plugin on " req'd for vundle; also A Good Idea
 
 " Color stuff:
 set background=dark
@@ -34,6 +41,9 @@ set foldlevel=99
 set modeline
 set number " line numbering
 set ruler " (line #, column #) in lower right
+
+" Preserve formatting when copypasting:
+set paste
 
 " req'd for pythoncomplete?
 filetype plugin on
