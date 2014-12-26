@@ -19,7 +19,6 @@ Plugin 'fatih/vim-go'
 Plugin 'wting/rust.vim'
 Plugin 'davidhalter/jedi-vim' " Python autocompletion
 Plugin 'ervandew/supertab'
-Bundle 'derekwyatt/vim-scala'
 
 call vundle#end()
 filetype indent plugin on " req'd for vundle; also A Good Idea
@@ -45,5 +44,5 @@ set ruler " (line #, column #) in lower right
 " Preserve formatting when copypasting:
 set paste
 
-" req'd for pythoncomplete?
+" req'd for pythoncomplete
 filetype plugin on
