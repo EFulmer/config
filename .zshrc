@@ -18,3 +18,9 @@ fi
 export JAVA_HOME="`/usr/libexec/java_home -v '1.7*'`"
 
 # TODO colorize cmd prompt and add pwd
+# %m%#
+# export PROMPT="%B%F{red}%n:%~%# %f%b"
+export PROMPT="%B%F{red}%~%# %f%b"
+
+### Added by the Heroku Toolbelt
+export PATH="/usr/local/heroku/bin:$PATH"
